@@ -247,11 +247,11 @@ select {
 }
 
 
-.recent-news-heading {
+.recent-news-heading, .donate-heading {
     font-size: 40px;
 }
 
-.recent-news-description {
+.recent-news-description, .donate-description {
     color: rgba(14, 14, 14, 0.7);
     font-size: 16px;
     font-weight: 400;
@@ -301,4 +301,45 @@ select {
     margin-top: auto;
     border-radius: 8px;
     background: #006a50;
+}
+
+/* donate */
+.donate{
+    padding: 0 40px;
+    text-align: center;
+}
+.donate-card{
+    border-radius: 16px;
+    border: 1px solid rgba(14, 14, 14, 0.15);
+    padding: 40px;
+    background: white;
+    border: none;
+    font-size: 32px;
+    font-weight: 600;
+    transition: .6s;
+    cursor: pointer;
+}
+.recommended{
+    background-color: rgb(198, 228, 214);
+}
+.donate-card:hover{
+    background-color: rgb(198, 228, 214);
+}
+
+.donate input{
+    padding: 20px 40px;
+    width: 90%;
+    border:none;
+    text-align: center;
+    font-size: 20px;
+}
+
+.donate button{
+    padding: 17px 34px;
+    background: rgb(0, 106, 80);
+    color: white;
+    border: none;
+    font-size: 18px;
+    border-radius: 8px;
+    margin: 30px 0;
 }
