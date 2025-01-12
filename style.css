@@ -1,33 +1,33 @@
 /* General */
-body{
+body {
     background-color: #f5f5f5;
     font-family: 'Fira Sans';
     color: #0e0e0e;
 }
 
-html{
+html {
     padding: 0;
     margin: 0;
 }
 
 /* NAVBAR */
-.navbar{
+.navbar {
     background-color: #f5f5f5;
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     padding: 0px 160px;
     align-items: center;
     margin: 20px 0px;
 }
 
-.logo{
+.logo {
     color: rgb(14, 14, 14);
     font-family: Fira Sans;
     font-size: 32px;
     font-weight: 700;
 }
 
-.signin{
+.signin {
     padding: 15px 30px 15px 30px;
     box-sizing: border-box;
     border: 1px solid rgb(0, 106, 80);
@@ -41,31 +41,31 @@ html{
     text-align: left;
 }
 
-.signin:hover{
+.signin:hover {
     background-color: rgb(0, 106, 80);
     color: #f5f5f5;
 }
 
-button{
+button {
     transition: 0.25s;
 }
 
-button:hover{
+button:hover {
     opacity: .7;
 }
 
 /* Banner */
-section{
+section {
     margin-top: 80px;
     padding: 0 160px;
 }
 
 
-.banner-section{
+.banner-section {
     margin-top: 0;
 }
 
-.banner{
+.banner {
     margin-top: 0;
     padding: 60px;
     border-radius: 24px;
@@ -76,7 +76,7 @@ section{
     gap: 64px;
 }
 
-.banner-subtitle{
+.banner-subtitle {
     color: rgba(14, 14, 14, 0.5);
     font-size: 24px;
     font-weight: 500;
@@ -85,8 +85,8 @@ section{
     text-align: left;
 }
 
-.banner-title{
-    
+.banner-title {
+
     color: rgb(14, 14, 14);
     font-size: 56px;
     font-weight: 700;
@@ -95,7 +95,7 @@ section{
     text-align: left;
 }
 
-.banner-button{
+.banner-button {
     border-radius: 8px;
     padding: 17px 34px 17px 34px;
     background: rgb(0, 106, 80);
@@ -110,7 +110,7 @@ section{
 
 
 /* Pillars */
-.card-container{
+.card-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -118,21 +118,187 @@ section{
     gap: 24px;
 }
 
-.card{
+.card {
     width: 230px;
     height: 200px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: flex-start;
     gap: 32;
-    padding: 0px;
+    padding: 24px;
     border: 1px solid rgba(14, 14, 14, 0.15);
+    border-radius: 16px;
+    background-color: white;
 }
 
-.card-heading{
+.card-heading,
+.opinion-heading {
     font-size: 40px;
 }
 
 
 /* vision */
+.card-button {
+    padding: 11px 20px 11px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    color: white;
+    margin-top: auto;
+    border: none;
+}
+
+.vision-description,
+.quote-text {
+    color: rgba(14, 14, 14, 0.7);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+.vision-card {
+    height: 250px;
+    width: 330px;
+    border: none;
+}
+
+.card-1 {
+    background: rgba(84, 144, 245, 0.2);
+}
+
+.card-1 button {
+    background: rgb(84, 144, 245);
+}
+
+.card-2 {
+    background: rgb(198, 228, 214);
+}
+
+.card-2 button {
+    background: rgb(9, 161, 92);
+}
+
+.card-3 {
+    background: rgb(247, 235, 207);
+}
+
+.card-3 button {
+    background: rgb(255, 194, 57);
+}
+
+/* quotes */
+
+.quote {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 48px 24px;
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+    margin-left: 160px;
+    margin-right: 160px;
+
+}
+
+.quote img {
+    opacity: .6;
+    position: absolute;
+}
+
+.quote .author p {
+    margin: 0;
+    margin-top: 16px;
+}
+
+.quote .designation {
+    opacity: .7;
+}
+
+
+/* opinion */
+
+.opinion-container {
+    padding: 32px;
+    border-radius: 16px;
+    background-color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+    padding: 20px;
+    font: 18px;
+    background-color: rgb(198, 228, 214);
+}
+
+td {
+    padding: 20px;
+    border: 1px solid rgba(14, 14, 14, 0.15);
+}
+
+select {
+    background-color: rgb(198, 228, 214);
+    padding: 10px;
+    border-radius: 4px;
+}
+
+
+.recent-news-heading {
+    font-size: 40px;
+}
+
+.recent-news-description {
+    color: rgba(14, 14, 14, 0.7);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* news */
+.news-card-container {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.news-card {
+    background-color: white;
+    color: rgba(14, 14, 14, 0.7);
+    display: flex;
+    gap: 32px;
+    padding: 48px;
+    border-radius: 24px;
+}
+
+.news-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.news-card-heading {
+    font-size: 32px;
+    margin: 8px 0;
+}
+
+.news-img {
+    border-radius: 24px;
+}
+
+.news-channel {
+    width: 134px;
+}
+
+.news-btn {
+    padding: 13px 26px;
+    color: white;
+    font-weight: 600;
+    border: none;
+    margin-top: auto;
+    border-radius: 8px;
+    background: #006a50;
+}
